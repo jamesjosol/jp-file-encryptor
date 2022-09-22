@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="647.0" styleClass="cryptowindowmain" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FileCryptoWindowController">
+   <children>
+      <Pane layoutX="26.0" layoutY="57.0" prefHeight="41.0" prefWidth="595.0" styleClass="openFileContainer" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0">
+         <children>
+            <Button fx:id="openFileBtn" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="113.0" styleClass="cwOpenBtn" text="Open File" />
+            <Label fx:id="filePathLabel" layoutX="137.0" layoutY="12.0" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="removeBtn" layoutX="539.0" layoutY="8.0" mnemonicParsing="false" onAction="#removeFile" prefHeight="25.0" prefWidth="42.0" styleClass="cwRemove" />
+         </children>
+      </Pane>
+      <GridPane layoutX="93.0" layoutY="223.0" prefHeight="55.0" prefWidth="414.0" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="140.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="encryptBtn" mnemonicParsing="false" onAction="#onEncryptFile" prefHeight="125.0" prefWidth="213.0" styleClass="cwBtn" text="Encrypt">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="decryptBtn" mnemonicParsing="false" onAction="#onDecryptFile" prefHeight="125.0" prefWidth="244.0" styleClass="cwBtn" text="Decrypt" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="fileNameLabel" layoutX="93.0" layoutY="110.0" prefHeight="17.0" prefWidth="414.0" text="Name :" textFill="WHITE" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="140.0">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="fileTypeLabel" layoutX="93.0" layoutY="140.0" prefHeight="17.0" prefWidth="414.0" text="Type :" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="fileSizeLabel" layoutX="93.0" layoutY="170.0" prefHeight="17.0" prefWidth="414.0" text="Size :" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="changeKeyBtn" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#onChangeKey" styleClass="changekey" text="Change Key" />
+   </children>
+</AnchorPane>

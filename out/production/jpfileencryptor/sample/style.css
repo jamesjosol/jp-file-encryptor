@@ -1,0 +1,109 @@
+.mainPane {
+    -fx-text-fill: #ebebeb;
+    -fx-background-color: #001627;
+}
+
+.mainBtn {
+    -fx-background-color: #0066c5;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #ffff;
+}
+
+.fbBtn {
+    -fx-background-color: #0066c5;
+    -fx-text-fill: #ffff;
+}
+
+.mainBtn:hover {
+    -fx-background-color: #0b7ae2;
+}
+
+.mainBtn:pressed {
+    -fx-background-color: #0066c5;
+}
+
+.cryptowindowmain {
+    -fx-background-color: #05445E;
+}
+
+.cwBtn {
+    -fx-background-color: #189AB4;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #ffff;
+}
+
+.cwBtn:hover {
+    -fx-background-color: #1dafcc;
+}
+
+.cwBtn:pressed {
+    -fx-background-color: #189AB4;
+}
+
+.openFileContainer {
+    -fx-border-radius: 6px;
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #dfdfdf;
+    -fx-border-width: 1px;
+}
+
+.cwOpenBtn {
+    -fx-background-color: #068073;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #ffff;
+}
+
+.cwOpenBtn:hover {
+    -fx-background-color: #089e8f;
+}
+
+.cwOpenBtn:pressed {
+    -fx-background-color: #057267;
+}
+
+.cwRemove {
+    -fx-background-color: #f83646;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #ffff;
+}
+
+.cwRemove:hover{
+    -fx-background-color: #fc4857;
+}
+
+.cwRemove:pressed{
+    -fx-background-color: #ec3342;
+}
+
+.changekey {
+    -fx-background-color: #065d80;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #ffff;
+}
+
+.changekey:hover{
+    -fx-background-color: #09749e;
+}
+
+.changekey:pressed{
+    -fx-background-color: #065372;
+}
+
+.changekeymainpane {
+    -fx-text-fill: #ebebeb;
+    -fx-background-color: #001627;
+}
+
+.menubar {
+    -fx-background-color: #64b0f7;
+    -fx-text-fill: #ffff;
+}
+
+.menu {
+    -fx-text-fill: #ffff;
+}
+
+#icon {
+    -fx-fill: white;
+}
